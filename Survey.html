@@ -1,0 +1,46 @@
+
+
+<?html>
+<link rel="stylesheet" href="styles.css">
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank you for your contribution</p>
+<form id="survey-form">
+  <label id="name-label"> Name</label>
+  <input id="name" type="text" required placeholder="Name"> 
+  <label id="email-label"> Email</label>
+  <input type="email" id="email" required placeholder="Email">
+  <label id="number-label"> Age</label>
+  <input id="number" type="number" min="0" max="100" placeholder="age">
+  <div>
+  <label>Level of eduction</label>
+  <select type="dropdown" id="dropdown">
+    <option >High school </option>
+    <option defult>Undergraduate </option>
+    <option>Master </option>
+    <option>PHD </option>
+  </select>
+</div>
+<div>
+  <input type="radio" value="value-name" name="value-name">
+  <input type="radio" value="value-name" name="value-name">
+  <input type="radio" value="value-name" name="value-name">
+</div>
+<div>
+  <input type="checkbox" value='value' attribute="value">
+  <input type="checkbox" value='value'attribute="value">
+  <input type="checkbox" value='value'attribute="value">
+
+</div>
+<div>
+<label>Additional Comments</label>
+  <textarea placeholder="Enter your additional Comments"></textarea>
+</div>
+
+  <button id="submit" >Submit</button>
+
+
+
+
+
+</form>
+
