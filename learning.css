@@ -1,0 +1,102 @@
+/*   selector{
+            (property:value; )Declartion}*/
+
+/*Elemnt. calss. id selector
+     Eelment: specifiy an element ( p,h1,)
+        p{
+
+        }
+
+    class::
+        .(class name){
+
+        }
+    id::(less used) because it used only one time 
+        #(id){
+        
+        }
+        
+    two of selector can be used for the same orginized
+        .(calss name), #id{
+
+        } 
+        or
+        p, #id{
+
+        }
+    
+    */
+    /* Combining selectors  (can work for all selector
+    p.big{(every p that has class ="big")
+
+        child selecotr
+        article>p{(Every p that is a direct child of article)
+            <article>
+                <p> (works)</p>
+            <article>
+
+            <p>
+            <article> not working<article>
+            <p>
+
+            Descendant selector
+            article p{(every p that is inside of article)
+
+            }
+            .(class name).(calss name){(elemnt that have both calsses)
+            }      
+
+        }
+    }
+    
+    */
+    /*pseudo calss selecor
+        selector:psoeudo class{
+
+        }
+        :link (
+        :visited
+        :hover(
+        :active (click not releseing
+    
+    */
+    /*Style Placemnt
+        Create a new file for just styling style.css so we can resue it for different html so we need to override them style
+        <link rel="stylesheet"  href="style.css> for declration and should be inside (head)
+
+    */
+    /* Conflict resolution
+        origin: (with conflct=last decleration wins ) (with no conflict=declaraion marge)
+        merge:
+        inhertainte:child inheret parant property (body=p)
+        specificity::most specific selector combination wins (style -id -calss+attribute -#of element)
+        Ex:
+             <p style="">=====1000
+             div p{ ------------}===0002 we have two element(div+p)
+             EX:
+             div #my parag{----------}=0101 this wins be cause it has higher value 
+             div .big p{-------------}====0012 this lose because lower value
+
+
+             !important delet the specifity 
+             p{    
+                color:green !important;
+             }
+
+    
+    
+    */
+    /* Styling text
+             font family
+             color (#001122) 00=red  11=green 22=blue
+             font-style::italic
+             font-weight: bold
+             font-size:
+
+             relative font size
+                        %
+                        em(increase by ---) 2em increase by two time (double size) 
+                font-size: 120%
+                font-size:2em
+    
+    */
